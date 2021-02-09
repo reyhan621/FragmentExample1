@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SimpleFragment"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Like the article?"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:textColor="#FFF"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_vertical"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textColor="#FFF"
+            android:buttonTint="#FFF"/>
+
+        <RadioButton
+            android:id="@+id/rb_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="#FFF"
+            android:buttonTint="#FFF"/>
+    </RadioGroup>
+</LinearLayout>
